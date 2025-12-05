@@ -7,16 +7,16 @@ Built using **LangChain (LCEL)**, **Google Gemini**, **ChromaDB**, and **Tavily 
 
 ## Features
 
-*  PDF Only Mode (Sequential Chain):**
+*  PDF Only Mode (Sequential Chain):
     * Fast retrieval from uploaded documents.
     * Uses **MMR (Maximal Marginal Relevance)** to find diverse and detailed context from the PDF.
     * Strictly answers based *only* on the document to reduce hallucinations.
 
-*  PDF + Web Mode (Parallel Chain):**
+*  PDF + Web Mode (Parallel Chain):
     * Runs **Vector Search** (PDF) and **Tavily Web Search** (Internet) in parallel.
     * Synthesizes information from both sources to answer complex questions (e.g., "Compare the course grade policy with current industry standards").
 
-*  Debug Mode:**
+*  Debug Mode:
     * Built-in "What the Bot is Reading" expander to view exactly which PDF chunks and web results are being fed to the LLM.
 
 ##  Tech Stack
@@ -61,5 +61,6 @@ Run the Streamlit app:
 
 ```bash
 streamlit run main.py
+
 
 
