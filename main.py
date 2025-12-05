@@ -15,7 +15,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from rag.embed_and_store import embed_and_store_pdf
 from rag.retrieve import get_retriever 
 # NOTE: Ensure search.py has 'get_web_search_tool' as defined in previous steps
-from internet_agent.search import get_web_search_tool
+from web_search.search import get_web_search_tool
 
 # Load Env
 load_dotenv()
