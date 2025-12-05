@@ -31,7 +31,7 @@ def embed_and_store_pdf(pdf_path):
     )
     splits = text_splitter.split_documents(docs)
     
-    # 4. Embed and Store (Gemini)
+    # 4. Embed and Store
     # Ensure GOOGLE_API_KEY is in your .env file
     embedding_function = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
     

@@ -11,7 +11,6 @@ def get_retriever():
         embedding_function=embedding_function
     )
     
-    # --- FIX: USE MMR SEARCH ---
     # "mmr" (Maximal Marginal Relevance) is better for finding details.
     # It fetches diverse chunks instead of just the most similar ones.
     retriever = vectorstore.as_retriever(

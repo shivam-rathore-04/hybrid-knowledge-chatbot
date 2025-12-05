@@ -3,7 +3,6 @@ import os
 import sys
 from dotenv import load_dotenv
 
-# --- PATH FIX ---
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 # LCEL Imports (The building blocks of Chains)
